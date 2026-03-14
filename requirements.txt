@@ -17,7 +17,8 @@ numpy
 pandas
 scikit-learn
 imbalanced-learn
-tensorflow==2.15.0
+tensorflow-cpu==2.15.0
 joblib
 nltk
 gunicorn
+
