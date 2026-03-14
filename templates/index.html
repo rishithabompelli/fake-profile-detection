@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Fake Profile Detector</title>
+  <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+  <div class='container'>
+    <h1>Fake Profile Detection System</h1>
+    <p>Enter the social media profile details below:</p>
+    <form action='/predict' method='POST'>
+      <label>Followers:</label>
+      <input type='number' name='followers' placeholder='e.g. 500'>
+
+      <label>Following:</label>
+      <input type='number' name='following' placeholder='e.g. 1000'>
+
+      <label>Follower/Following Ratio:</label>
+      <input type='number' name='follower_following_ratio' step='0.01' placeholder='e.g. 0.78'>
+
+      <label>Total Posts:</label>
+      <input type='number' name='posts' placeholder='e.g. 50'>
+
+      <label>Has Profile Picture (1=Yes, 0=No):</label>
+      <input type='number' name='has_profile_pic' placeholder='1 or 0'>
+
+      <label>Username Randomness (1=Random, 0=Normal):</label>
+      <input type='number' name='username_randomness' placeholder='1 or 0'>
+
+      <label>Suspicious Links in Bio (1=Yes, 0=No):</label>
+      <input type='number' name='suspicious_links_in_bio' placeholder='1 or 0'>
+
+      <label>Verified (1=Yes, 0=No):</label>
+      <input type='number' name='verified' placeholder='1 or 0'>
+
+      <label>Bio Length (characters):</label>
+      <input type='number' name='bio_length' placeholder='e.g. 150'>
+
+      <button type='submit'>Detect Profile</button>
+    </form>
+  </div>
+</body>
+</html>

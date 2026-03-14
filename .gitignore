@@ -1,0 +1,30 @@
+# Virtual environment
+venv/
+ 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+ 
+# Environment variables
+.env
+ 
+# Large model files (optional - remove if you want to push models)
+models/*.h5
+ 
+# Dataset (usually too large for GitHub)
+data/
+ 
+# OS files
+.DS_Store
+Thumbs.db
+ 
+# IDE files
+.vscode/
+.idea/
+
+models/
+__pycache__/
+*.pyc
+*.h5
+*.pkl

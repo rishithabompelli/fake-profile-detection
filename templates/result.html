@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+ <meta charset='UTF-8'>
+ <title>Result - Fake Profile Detector</title>
+ <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+ <div class='container'>
+   <h1>Detection Result</h1>
+   <div class='result-box {{ result.label.lower() }}'>
+     <h2>Profile is: {{ result.label }}</h2>
+     <p>Confidence: {{ result.confidence }}%</p>
+   </div>
+   <a href='/' class='btn'>Check Another Profile</a>
+ </div>
+</body>
+</html>
